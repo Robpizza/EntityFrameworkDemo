@@ -1,4 +1,4 @@
-﻿namespace SchoolDemo;
+﻿namespace SchoolDemo.Models;
 
 public class Post
 {
@@ -8,4 +8,12 @@ public class Post
 
     public int BlogId { get; set; }
     public Blog Blog { get; set; }
+
+
+    public Post(string title, string content, int blogId)
+    {
+        Title = title;
+        Content = content;
+        BlogId = blogId;
+    }
 }

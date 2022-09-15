@@ -1,13 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SchoolDemo.Models;
 
 namespace SchoolDemo;
 
 public class BloggingContext : DbContext
 {
-    
-    // Define Db sets
-    public DbSet<Blog>? Blogs { get; set; }
-    public DbSet<Post>? Posts { get; set; }
+    public DbSet<Blog> Blogs { get; set; }
+    public DbSet<Post> Posts { get; set; }
     
     private string DbPath { get; }
 
@@ -20,5 +19,5 @@ public class BloggingContext : DbContext
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
-        optionsBuilder.UseSqlite($"Data Source ={DbPath}");
+        optionsBuilder.UseSqlite($"Data Source={DbPath}");
 }

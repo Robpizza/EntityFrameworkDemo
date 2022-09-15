@@ -1,4 +1,6 @@
-﻿namespace SchoolDemo;
+﻿using SchoolDemo.Models;
+
+namespace SchoolDemo;
 
 public class Blog
 {
@@ -6,4 +8,9 @@ public class Blog
     public string Url { get; set; }
 
     public virtual List<Post> Posts { get; } = new();
+
+    public Blog(string url)
+    {
+        Url = url;
+    }
 }
