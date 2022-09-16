@@ -6,7 +6,7 @@ public static class Program
 {
     public static int Main(string[] args)
     {
-        new BlogSeeder().Seed();
+        new AuthorSeeder().Seed();
         return 0;
     }
 }

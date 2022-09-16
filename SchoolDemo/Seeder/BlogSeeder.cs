@@ -1,4 +1,6 @@
-﻿namespace SchoolDemo.Seeder;
+﻿using SchoolDemo.Models;
+
+namespace SchoolDemo.Seeder;
 
 public class BlogSeeder
 {

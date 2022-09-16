@@ -7,6 +7,7 @@ public class BloggingContext : DbContext
 {
     public DbSet<Blog> Blogs { get; set; }
     public DbSet<Post> Posts { get; set; }
+    public DbSet<Author> Author { get; set; }
     
     private string DbPath { get; }
 
