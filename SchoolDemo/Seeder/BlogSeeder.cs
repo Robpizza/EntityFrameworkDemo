@@ -12,6 +12,7 @@ public class BlogSeeder
             var blog = new Blog(Faker.Internet.Url());
             Console.Out.WriteLine($"Blog inserted with url: {blog.Url}");
             Console.Out.WriteLine($"Generating random amount of posts");
+           
             new PostSeeder().Seed(ref blog, new Random().Next(1, 5));
             
             db.Blogs.Add(blog);
