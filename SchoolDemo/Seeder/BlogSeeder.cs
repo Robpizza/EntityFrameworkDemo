@@ -9,6 +9,7 @@ public class BlogSeeder
         using var db = new BloggingContext();
         for (var i = 0; i < Amount; i++)
         {
+        
             var blog = new Blog(Faker.Internet.Url());
             Console.Out.WriteLine($"Blog inserted with url: {blog.Url}");
             Console.Out.WriteLine($"Generating random amount of posts");
